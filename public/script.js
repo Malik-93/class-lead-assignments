@@ -1,4 +1,4 @@
-const ASSIGNMENTS_DATA = new Array(44).fill();
+const ASSIGNMENTS_DATA = new Array(45).fill();
 
 function load_assignments() {
     const ul = document.getElementById("assignments_list");
