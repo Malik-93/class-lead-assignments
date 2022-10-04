@@ -1,19 +1,23 @@
-const GREEN = 'green',
-    YELLOW = 'yellow',
-    RED = 'red';
-const input = document.getElementById("color");
+
+// Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+// • Make a array of your three favorite fruits and call it favorite_fruits.
+
+// • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
+const APPLE = 'apple',
+    BANANA = 'banana',
+    GRAPS = 'graps';
+const favorite_fruits = [APPLE, BANANA, GRAPS]
+const input = document.getElementById("fruite");
 const form = document.getElementById("form");
 form.addEventListener('submit', function (ev) {
     ev.preventDefault();
-    const value = `${input.value}`;
-    if (value === GREEN) {
-        show_snack('player just earned 5 points for shooting the alien');
+    const value = `${input.value}`.toLowerCase();
+    const fruite_index = favorite_fruits.indexOf(value);
+    if (fruite_index >= 0) {
+        show_snack(`You really like ${favorite_fruits[fruite_index]}`)
     }
-    else if (value === YELLOW) {
-        show_snack('player just earned 10 points for shooting the alien');
-    } else if (value === RED) {
-        show_snack('player just earned 15 points for shooting the alien');
-    }
+    input.value = '';
+
 })
 
 function show_snack(message) {
