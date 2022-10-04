@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Panaverse</title>
+</head>
+
+<body>
+    <div style="text-align: center; font-size: large">
+        <a href="/">Go to Home</a>
+    </div>
+    <h1 id="heading"></h1>
+    <h4>They think of something you could store in a JavaScript Object.</h4>
+    <table id="users">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Item Name</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+
+        </tbody>
+
+    </table>
+
+    <form id="form">
+        <label for="name">Create Object:</label><br>
+        <input type="text" id="item" name="item" placeholder="add item" required><br>
+        <input type="submit" value="submit" id="submit">
+    </form>
+    <script src="./script.js" defer></script>
+    <script src="../common_script.js" defer></script>
+
+</body>
+
+</html>
